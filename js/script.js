@@ -32,31 +32,45 @@ $("#email").click(function() {
     });
 
 
+    var text = new Blotter.Text("Coming soon!", {
+    	family : "'Inter', sans-serif",
+    	size : 100,
+    	fill : "#F2DDDE",
+    });
 
-var text = new Blotter.Text("Coming soon", {
-  family : "'Inter', sans-serif",
-  size : 45,
-  weight : 500,
-  paddingLeft : 10,
-  paddingRight : 40,
-  fill : "#F2DDDE"
-});
+    var material = new Blotter.FliesMaterial();
 
-var material = new Blotter.SlidingDoorMaterial();
+    material.uniforms.uPointCellWidth.value = 0.01;
+    material.uniforms.uPointRadius.value = .8;
+    material.uniforms.uSpeed.value = 5;
 
-material.uniforms.uDivisions.value = 6;
-material.uniforms.uDivisionWidth.value = 0.2;
-material.uniforms.uAnimateHorizontal.value = 0.5;
+    var blotter = new Blotter(material, {
+    	texts : text,
+    });
 
-material.uniforms.uFlipAnimationDirection.value = true;
+    var elem = document.getElementById("coming-text");
+    var scope = blotter.forText(text);
+
+    scope.appendTo(elem);
 
 
+    var text = new Blotter.Text("Coming soon!", {
+    	family : "'Inter', sans-serif",
+    	size : 40,
+    	fill : "#F2DDDE",
+    });
 
-var blotter = new Blotter(material, {
-  texts : text
-});
+    var material = new Blotter.FliesMaterial();
 
-var elem = document.getElementById("coming-text");
-var scope = blotter.forText(text);
+    material.uniforms.uPointCellWidth.value = 0.02;
+    material.uniforms.uPointRadius.value = .8;
+    material.uniforms.uSpeed.value = 5;
 
-scope.appendTo(elem);
+    var blotter = new Blotter(material, {
+    	texts : text,
+    });
+
+    var elem2 = document.getElementById("coming-text-resp");
+    var scope = blotter.forText(text);
+
+    scope.appendTo(elem2);

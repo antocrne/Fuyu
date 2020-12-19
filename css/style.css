@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
 
-
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
@@ -26,10 +25,9 @@ body {
   width: 100%;
 }
 
-
 .mainvisual__elm {
   position: absolute;
-  bottom: 20%;
+  bottom: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -45,21 +43,29 @@ body {
   font-weight: 300;
   cursor: pointer;
   color: #F2DDDE;
-
 }
 
+#coming-text-resp {
+  display: none;
+}
+
+
+
 @media screen and (max-width: 568px) {
+
+  #coming-text {
+    display: none;
+  }
+
+  #coming-text-resp {
+    display: block;
+  }
+
   .mainvisual__elm {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
-    transform: translate(-50%, -30%);
+    transform: translate(-50%, -50%);
   }
 
-  .b-canvas {
-
-    width: 220px !important;
-    height: 74px !important;
-
-  }
 }
