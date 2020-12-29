@@ -32,6 +32,12 @@ body {
   transform: translate(-50%, -50%);
 }
 
+.mainvisual__elm h1 {
+  color: #F2DDDE;
+  font-size: 4rem;
+  letter-spacing: 4px;
+}
+
 .mail {
   position: absolute;
   right: 30px;
@@ -45,27 +51,25 @@ body {
   color: #F2DDDE;
 }
 
-#coming-text-resp {
-  display: none;
-}
-
 
 
 @media screen and (max-width: 568px) {
 
-  #coming-text {
-    display: none;
-  }
-
-  #coming-text-resp {
-    display: block;
-  }
+ 
 
   .mainvisual__elm {
+    width: 100%;
+    text-align: center;
     position: absolute;
     bottom: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+
+  .mainvisual__elm h1 {
+    color: #F2DDDE;
+    font-size: 2rem;
+    letter-spacing: 4px;
   }
 
 }
