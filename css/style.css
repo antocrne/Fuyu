@@ -14,7 +14,7 @@ body {
 }
 
 .mainvisual__img {
-  width: 200px;
+  width: 450px;
   position: absolute;
   top: 45%;
   left: 50%;
@@ -55,7 +55,13 @@ body {
 
 @media screen and (max-width: 568px) {
 
- 
+  .mainvisual__img {
+    width: 300px;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   .mainvisual__elm {
     width: 100%;
