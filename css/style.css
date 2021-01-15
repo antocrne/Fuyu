@@ -30,10 +30,59 @@ body {
   width: 100%;
 }
 
+
+#loadingProgressG {
+  width: 300px;
+  height: 1.5px;
+  overflow: hidden;
+  background-color: #F2DDDE;
+  margin: auto;
+  border-radius: 50px;
+}
+
+.loadingProgressG {
+  background-color: #101820;
+  margin-top: 0;
+  margin-left: -300px;
+  animation-name: bounce_loadingProgressG;
+  -o-animation-name: bounce_loadingProgressG;
+  -ms-animation-name: bounce_loadingProgressG;
+  -webkit-animation-name: bounce_loadingProgressG;
+  -moz-animation-name: bounce_loadingProgressG;
+  animation-duration: 2s;
+  -o-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  -o-animation-timing-function: ease-in-out;
+  -ms-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  -moz-animation-timing-function: ease-in-out;
+  width: 300px;
+  height: 1.5px;
+}
+
+
+@keyframes bounce_loadingProgressG {
+  0% {
+      margin-left: -300px;
+  }
+
+  100% {
+      margin-left: 300px;
+  }
+}
+
 .mainvisual__title h1 {
   text-align: center;
-  font-weight: 600;
-  letter-spacing: 2px;
+  font-weight: 300;
+  letter-spacing: 1px;
   font-size: 3rem;
   color: #F2DDDE;
 }
