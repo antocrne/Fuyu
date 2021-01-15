@@ -31,3 +31,6 @@ $("#email").click(function() {
         }, 1200);
     });
 
+
+    
+
