@@ -1,51 +1,149 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="fr" >
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no">
-  <meta name="description" content="FUYU est un studio de création créé par Antoine Cornière & Steven Roussel basé à Saint-Nazaire (presqu’en Bretagne).">
-  <meta name="keywords" content="filmmaker, filmmaking, photographer, photography,  content creation, content creator, création de contenu, vidéos, photographie, photographe, vidéaste, Fuyu, Fuyu Studio">
-  <meta itemprop="name" content="Fuyu Studio">
-  <meta itemprop="url" content="https://fuyu.studio">
-  <meta name="robots" content="index, follow">
-  <title>Fuyu Studio</title>
-  <link rel="icon" type="image/svg" href="img/favicon.png">
-  <link rel="stylesheet" href="css/style.css">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-ST8BF0HV09"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-ST8BF0HV09');
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FUYU est un studio de création créé par Antoine Cornière &amp; Steven Roussel basé à Saint-Nazaire (presqu’en Bretagne).">
+    <meta name="keywords" content="filmmaker, filmmaking, photographer, photography,  content creation, content creator, création de contenu, vidéos, photographie, photographe, vidéaste, Fuyu, Fuyu Studio">
+    <meta itemprop="name" content="Fuyu Studio">
+    <meta itemprop="url" content="https://fuyu.studio">
+    <meta name="robots" content="index, follow">
+    <title>Fuyu Studio</title>
+    <link rel="icon" type="image/svg" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ST8BF0HV09"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+    
+        gtag('config', 'G-ST8BF0HV09');
+      </script>
 
 </head>
-
 <body>
-  
-  <div class="mainvisual">
-    <div class="mainvisual__img">
-      <img src="img/Fuyu.svg" alt="">
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index"><img src="img/Fuyu_white.svg" alt="" class="brand"></a>
+              <span class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <div class="toggle__menu">
+                    <div id="toggle">
+                        <span id="top" class="toggle__index"></span>
+                        <span id="middle" class="toggle__index"></span>
+                        <span id="bottom" class="toggle__index"></span>
+                    </div>
+                </div>
+              </span>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" href="a-propos">A propos</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </div>
-    <div id="loadingProgressG">
-      <div id="loadingProgressG_1" class="loadingProgressG"></div>
-  </div>
-    <div class="mainvisual__title">
-      <h1>Coming soon!</h1>
-    </div>
-  </div>
+    
+      <div class="top__section">
+          <div class="h__bg"></div>
+          <div class="mainvisual__img">
+              <img src="img/Fuyu_white.svg" alt="">
+          </div>
+          <div class="mainvisual__scroll">
+            <span>Explorer</span>
+            <div class="bar"></div>
+          </div>
+      </div>
 
-  <div class="mail">
-    <span id="email">hello@fuyu.studio</span>
-  </div>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/script.js"></script>
+      <div class="section__title">
+          <div class="title__h" data-aos="fade-up" data-aos-duration="800">
+              <h1>Studio de création</h1>
+          </div>
+      </div>
+      <div class="container">
+          <div class="home__txt" data-aos="fade" data-aos-duration="1000">
+              <p>Fuyu est un studio de création graphique et de communication visuelle créé par Antoine Cornière et Steven Roussel. Nos armes ? Les productions audiovisuelles, le développement web et les réseaux sociaux (sans oublier le café ☕).</p>
+          </div>
+      </div>
+        <div class="services__section">
+            <div class="bg__services"></div>
+            <div class="container services">
+                <div class="row row__s">
+                    <div class="col">
+                        <div class="card" data-aos="fade-right" data-aos-duration="900" data-aos-easing="ease-in-out">
+                            <img src="img/icons/APN.png" class="card-img-top" alt="...">
+                            <div class="card-body border-top">
+                            <p class="card-text">Nous produisons vos contenus audiovisuels. Photographie, vidéo, motion design et post production. Votre projet est le nôtre ! 👌</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"data-aos="fade-up" data-aos-duration="900" data-aos-easing="ease-in-out">
+                            <img src="img/icons/MSG.png" class="card-img-top" alt="...">
+                            <div class="card-body border-top">
+                            <p class="card-text">Besoin d’aide avec votre communication ? Voyons ensemble la stratégie et les créations à réaliser pour atteindre vos objectifs ! 📣</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card"data-aos="fade-left" data-aos-duration="900" data-aos-easing="ease-in-out">
+                            <img src="img/icons/DEV.png" class="card-img-top" alt="...">
+                            <div class="card-body border-top">
+                            <p class="card-text">De façon digitale (site internet, réseaux sociaux, e-mailing) ou print (affiche, carte de visite, charte graphique, magazine). Nous pouvons vous accompagner ! 🎨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="container clients">
+            <h2 data-aos="fade" data-aos-duration="800">Nos références</h2>
+            <div class="row" data-aos="fade" data-aos-duration="1000">
+                <div class="col-sm"><div class="logo__img"><img src="img/logos/VendeeGlobe.png" alt=""></div></div>
+                <div class="col-sm"><div class="logo__img"><img src="img/logos/polaRYSE.png" alt=""></div></div>
+                <div class="col-sm"><div class="logo__img"><img src="img/logos/PrismaMedia.png" alt=""></div></div>
+            </div>
+            <div class="row" data-aos="fade" data-aos-duration="1000">
+                <div class="col-sm"><div class="logo__img"><img src="img/logos/SNCF.png" alt=""></div></div>
+                <div class="col-sm"><div class="logo__img"><img src="img/logos/CarsatPaysDeLaLoire.png" alt=""></div></div>
+                <div class="col-sm"><div class="logo__img"><img src="img/logos/Edito.png" alt=""></div></div>
+                <div class="col-sm"><div class="logo__img"><img src="img/logos/MMIBDX.png" alt=""></div></div>
+            </div>
+        </div>
+        <div class="container exp__c">
+            <div class="row">
+                <div class="col exp" data-aos="fade-up" data-aos-duration="800">
+                    <a href="a-propos" class="exp__btn">Explorer fuyu</a>
+                </div>
+            </div>
+        </div>
+        
+    <div class="footer d-flex justify-content-between">
+        <div class="socials">
+            <a href="https://www.instagram.com/fuyu.studio/" target="__blank"><img src="img/icons/Instagram.svg" alt="" class="social__img"></a>
+            <a href="https://www.facebook.com/studiofuyu" target="__blank"><img src="img/icons/Facebook.svg" alt="" class="social__img"></a>
+            <a href="https://www.linkedin.com/company/fuyustudio" target="__blank"><img src="img/icons/LinkedIn.svg" alt="" class="social__img"></a>
+        </div>
+        <div class="mail">
+            <span id="email">hello@fuyu.studio</span>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/script.js"></script>
+<script>
+    AOS.init();
+
+   
+  </script>
 </body>
-
 </html>
